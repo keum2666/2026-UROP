@@ -3,3 +3,8 @@ __pycache__/
 *.py[cod]
 api_cache_gtx_a_routes/
 .ipynb_checkpoints/
+.vscode/
+*.pptx
+*.pdf
+*.docx
+gtx_research_flow.md
