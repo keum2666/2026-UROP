@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.py[cod]
+api_cache_gtx_a_routes/
+.ipynb_checkpoints/
