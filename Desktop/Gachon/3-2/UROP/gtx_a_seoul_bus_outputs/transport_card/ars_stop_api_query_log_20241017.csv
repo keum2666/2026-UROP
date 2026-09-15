@@ -1,0 +1,159 @@
+﻿노선번호,sttnArsno,sdCd,status,count,error
+2200,30920,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30920 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0310070>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,31026,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=31026 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0327010>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30675,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30675 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0326200>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,31020,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=31020 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0316D40>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30916,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30916 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF03272B0>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30935,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30935 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0326E30>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,31726,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=31726 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0310580>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,31727,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=31727 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0311720>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,31709,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=31709 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0313010>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,31707,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=31707 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0316620>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30219,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30219 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0310160>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30811,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30811 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0313610>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30007,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30007 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0326F20>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30006,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30006 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0326380>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30004,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30004 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF03151E0>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30003,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30003 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF03261A0>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,31571,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=31571 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF03268C0>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,14216,11,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=11&sttnArsno=14216 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AE81B17FA0>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,14219,11,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=11&sttnArsno=14219 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0312E30>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,14220,11,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=11&sttnArsno=14220 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0311AB0>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,14895,11,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=11&sttnArsno=14895 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF03150F0>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,14835,11,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=11&sttnArsno=14835 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0312B90>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,14012,11,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=11&sttnArsno=14012 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0310220>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,14011,11,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=11&sttnArsno=14011 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AE808F2CB0>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,14217,11,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=11&sttnArsno=14217 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0326980>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,14218,11,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=11&sttnArsno=14218 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF03262F0>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30001,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30001 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0316B60>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30117,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30117 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0313FA0>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30122,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30122 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0312860>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,31426,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=31426 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0311ED0>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,31855,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=31855 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0326680>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,31050,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=31050 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0315120>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30024,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30024 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0326B90>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30034,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30034 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF03265F0>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,30181,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=30181 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001AEF0311B10>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+1100,20594,41,OK,1,
+1100,20595,41,OK,1,
+1100,20036,41,OK,1,
+1100,20035,41,OK,1,
+1100,20053,41,OK,1,
+1100,20054,41,OK,1,
+1100,20649,41,OK,1,
+1100,20650,41,OK,1,
+1100,20764,41,OK,1,
+1100,20135,41,OK,1,
+1100,20136,41,OK,1,
+1100,20166,41,OK,1,
+1100,20161,41,OK,1,
+1100,20203,41,OK,1,
+1100,20206,41,OK,1,
+1100,20224,41,OK,1,
+1100,20227,41,OK,1,
+1100,20247,41,OK,1,
+1100,20249,41,OK,1,
+1100,20493,41,OK,1,
+1100,20494,41,OK,1,
+1100,20311,41,OK,1,
+1100,20353,41,OK,1,
+1100,20352,41,OK,1,
+1100,19174,11,OK,1,
+1100,19175,11,OK,2,
+1100,19120,11,OK,1,
+1100,19429,11,OK,1,
+1100,19104,11,OK,1,
+1100,20323,41,OK,1,
+1100,20491,41,OK,1,
+1100,20716,41,OK,1,
+1200,20676,41,OK,1,
+1200,20677,41,OK,1,
+1200,20641,41,OK,1,
+1200,20640,41,OK,1,
+1200,20164,41,OK,1,
+1200,20163,41,OK,1,
+1200,20176,41,OK,1,
+1200,20175,41,OK,1,
+1200,20181,41,OK,1,
+1200,20180,41,OK,1,
+1200,20204,41,OK,1,
+1200,20258,41,OK,1,
+1200,20257,41,OK,1,
+1200,20289,41,OK,1,
+1200,20291,41,OK,1,
+1200,20259,41,OK,1,
+1200,20260,41,OK,1,
+1200,20246,41,OK,1,
+1200,20250,41,OK,1,
+1200,20244,41,OK,1,
+1200,20242,41,OK,1,
+1200,58014,41,OK,1,
+1200,20297,41,OK,1,
+1200,20298,41,OK,1,
+1200,20605,41,OK,1,
+1200,20341,41,OK,1,
+1200,20342,41,OK,1,
+1200,20358,41,OK,1,
+1200,20369,41,OK,1,
+1200,20373,41,OK,1,
+1200,20354,41,OK,1,
+1200,20340,41,OK,1,
+1200,19007,41,OK,1,
+1200,19010,41,OK,1,
+1200,19065,41,OK,1,
+1200,19345,41,OK,1,
+1200,19134,41,OK,1,
+1200,19349,41,OK,1,
+1200,19564,41,OK,1,
+1200,19565,41,OK,1,
+1200,19404,41,OK,1,
+1200,19403,41,OK,1,
+1200,19212,41,OK,1,
+1200,19210,41,OK,1,
+1200,12001,11,OK,1,
+1200,12002,11,OK,1,
+1200,12007,11,OK,2,
+1200,12008,11,OK,3,
+1200,13012,11,OK,1,
+1200,13013,11,OK,2,
+1200,01129,11,OK,1,
+1200,02233,11,OK,1,
+1200,02117,11,OK,1,
+1200,02121,11,OK,1,
+1200,02122,11,OK,1,
+1200,02123,11,OK,1,
+1200,02008,11,OK,1,
+1200,13039,11,OK,2,
+1200,13041,11,OK,1,
+1200,20362,41,OK,1,
+1200,20252,41,OK,1,
+1200,20248,41,OK,1,
+1200,20287,41,OK,1,
+1200,20288,41,OK,1,
+1200,20208,41,OK,1,
+2200,30870,41,OK,1,
+2200,30136,41,OK,1,
+2200,31804,41,OK,1,
+2200,30178,41,OK,1,
+2200,30129,41,OK,1,
+2200,30132,41,OK,1,
+2200,30091,41,OK,1,
+2200,30095,41,OK,1,
+2200,31080,41,OK,1,
+2200,31081,41,OK,1,
+2200,31053,41,OK,1,
+2200,31416,41,OK,1,
+2200,30688,41,OK,1,
+2200,31548,41,OK,1,
+2200,31544,41,OK,1,
+2200,31045,41,OK,1,
+2200,31047,41,OK,1,
+2200,31663,41,OK,1,
+2200,31660,41,OK,1,
+2200,31427,41,OK,1,
+2200,31012,41,OK,1,
+2200,30659,41,OK,1,
+2200,30658,41,OK,1,
+2200,31044,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=31044 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001C48AB65BD0>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,31030,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=31030 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001C48AB66800>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
+2200,31031,41,ERROR,0,"ConnectTimeout(MaxRetryError(""HTTPSConnectionPool(host='stcis.go.kr', port=443): Max retries exceeded with url: /openapi/bussttn.json?apikey=20260915234522nnj3998ebr5d6tc3unpfk2062p&sdCd=41&sttnArsno=31031 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001C48AB67AC0>, 'Connection to stcis.go.kr timed out. (connect timeout=30)'))""))"
