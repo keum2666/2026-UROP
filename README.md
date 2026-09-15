@@ -26,6 +26,23 @@ STCIS 노선번호로 노선 ID 확인
 노선별 이용량 및 수요 변화 분석
 ```
 
+## 현재 진행 상황
+
+- [x] GTX-A 북측 대상지역(운정중앙역·킨텍스역·대곡역)의 서울행 광역버스 후보 추출
+- [x] 후보 노선의 STCIS 노선 ID 확인 및 `P_G_BUSID_32routes.csv` 정리
+  - 원본은 42개 정류장-노선 조합이며, 고유 노선은 32개입니다.
+- [x] 비교 기준일 설정: 2024-10-17, 2025-10-16
+- [x] 경기도에서 승차하고 서울에서 하차한 교통카드 수요 조회
+  - 승차 지역 코드 `41`, 하차 지역 코드 `11` 기준으로 후처리합니다.
+- [x] 조회 원본 CSV 저장
+- [ ] 2024년 노선 변경분의 과거 STCIS 노선 ID 반영
+  - `3100`과 `2200`은 과거 ID를 적용했으며, `7111`, `9030`, `9030-1`, `M7111`은 과거 ID 확인 후 추가 조회해야 합니다.
+- [ ] 노선별 경유 정류장 순서 및 정류장명 매핑
+  - `05_stcis_route_stops_mapping.ipynb`에 구현했으나, 현재 STCIS 서버 연결 시간 초과로 재실행이 필요합니다.
+- [ ] 노선별 수요 집계 및 GTX-A 개통 전후 변화 분석
+
+현재 분석에서 예약 노선, N 노선, `7602`, `2200-1`은 제외합니다. 따라서 현재 조회 대상은 30개 노선이며, 2024년 과거 ID를 확인하면 4개 노선을 추가해 최종 분석 대상을 확정할 예정입니다.
+
 ## 파일 구성
 
 | 파일 | 설명 |
@@ -33,14 +50,19 @@ STCIS 노선번호로 노선 ID 확인
 | `Desktop/Gachon/3-2/UROP/01_gtx_a_route_selection.py` | GTX-A 대상지역의 서울행 광역버스 후보 추출 |
 | `Desktop/Gachon/3-2/UROP/01_gtx_a_route_selection.ipynb` | 노선 후보 추출 과정 확인용 노트북 |
 | `Desktop/Gachon/3-2/UROP/02_stcis_route_id_lookup.ipynb` | 버스번호별 STCIS 노선 ID·기점·종점 조회 |
-| `Desktop/Gachon/3-2/UROP/03_gtx_transport_card_api_20241017.ipynb` | 2024년 10월 17일 교통카드 합성데이터 API 조회 |
-| `Desktop/Gachon/3-2/UROP/gtx_a_seoul_bus_outputs/` | 노선 후보 및 요약 CSV |
+| `Desktop/Gachon/3-2/UROP/03_gtx_transport_card_api_20241017.ipynb` | 2024·2025년 경기도 승차-서울 하차 수요 조회 및 원본 CSV 저장 |
+| `Desktop/Gachon/3-2/UROP/05_stcis_route_stops_mapping.ipynb` | STCIS 경유 정류장 조회 및 승차·하차 정류장명 매핑 |
+| `Desktop/Gachon/3-2/UROP/P_G_BUSID.csv` | 정류장별 노선 후보와 STCIS 노선 ID 원본 |
+| `Desktop/Gachon/3-2/UROP/P_G_BUSID_32routes.csv` | 고유 노선 32개로 정리한 노선 목록 |
+| `Desktop/Gachon/3-2/UROP/gtx_a_seoul_bus_outputs/transport_card/` | 2024·2025년 교통카드 원본 수요 CSV |
 
 ## 실행 순서
 
 1. `01_gtx_a_route_selection.py` 또는 노트북을 실행해 노선 후보 CSV를 생성합니다.
 2. `02_stcis_route_id_lookup.ipynb`에서 STCIS API 키를 입력하고 버스번호별 노선 ID를 확인합니다.
-3. `03_gtx_transport_card_api_20241017.ipynb`에서 공공데이터포털 API 키를 입력하고 교통카드 이용자료를 조회합니다.
+3. `03_gtx_transport_card_api_20241017.ipynb`에서 공공데이터포털 API 키를 입력하고 2024·2025년 교통카드 이용자료를 조회합니다.
+4. `05_stcis_route_stops_mapping.ipynb`에서 STCIS API 키를 입력하고 경기도(`sdCd=41`)와 서울(`sdCd=11`)의 경유 정류장을 함께 조회합니다.
+5. 생성된 정류장 순서·명칭으로 수요 원본의 승차·하차 정류장을 매핑한 뒤 노선별 수요를 집계합니다.
 
 ## API 키
 
