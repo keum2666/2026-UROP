@@ -43,6 +43,8 @@ STCIS 노선번호로 노선 ID 확인
   - 수요 데이터의 승차·하차 정류장명 매칭률은 두 기준일 모두 100%입니다.
 - [ ] 국토부 정류장 위치정보를 이용한 승차·하차 좌표 매핑
   - `06_stop_coordinates_mapping.ipynb`에 구현했으며, 국토부 위치정보 CSV 경로를 반영했습니다.
+- [ ] 국토부 버스정류장 API로 정류장 ID 직접 조회
+  - `07_find_missing_bus_stops.ipynb`에서 매핑 누락 ID의 정류장명·ARS·좌표를 조회하도록 준비했습니다.
 - [ ] 노선별 수요 집계 및 GTX-A 개통 전후 변화 분석
 
 ### 오늘 작업 완료 기준
@@ -61,6 +63,7 @@ STCIS 노선번호로 노선 ID 확인
 | `Desktop/Gachon/3-2/UROP/03_gtx_transport_card_api_20241017.ipynb` | 2024·2025년 경기도 승차-서울 하차 수요 조회 및 원본 CSV 저장 |
 | `Desktop/Gachon/3-2/UROP/05_stcis_route_stops_mapping.ipynb` | STCIS 경유 정류장 조회 및 승차·하차 정류장명 매핑 |
 | `Desktop/Gachon/3-2/UROP/06_stop_coordinates_mapping.ipynb` | 국토부 정류장 위치정보를 이용한 승차·하차 위도·경도 매핑 |
+| `Desktop/Gachon/3-2/UROP/07_find_missing_bus_stops.ipynb` | 국토부 BusStop API로 누락 정류장 ID·ARS·좌표 조회 |
 | `Desktop/Gachon/3-2/UROP/P_G_BUSID.csv` | 정류장별 노선 후보와 STCIS 노선 ID 원본 |
 | `Desktop/Gachon/3-2/UROP/P_G_BUSID_32routes.csv` | 고유 노선 32개로 정리한 노선 목록 |
 | `Desktop/Gachon/3-2/UROP/gtx_a_seoul_bus_outputs/transport_card/` | 2024·2025년 교통카드 원본 수요 CSV |
