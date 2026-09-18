@@ -148,3 +148,8 @@ API 키는 코드에 직접 기록하지 않고 `.env` 또는 노트북 입력�
   - 최종 공간 분석단위는 H3 resolution 8
 
 분석 실행 전에는 `h3`, `geopandas`, `shapely` 패키지를 설치해야 합니다.
+### Latest spatial visualization update
+
+The H3 map in `Analysis/02_h3_resolution_selection.ipynb` now uses only boarding stops from the 2024 and 2025 transport-card files. `utztn_nope` is aggregated as boarding users, and 2024 and 2025 are shown in separate maps. Cells with no boarding stop remain white; cells with boarding records are colored by boarding users. The Seoul, Goyang, and Paju city boundaries are shown together, while route 7111 remains excluded.
+
+The next spatial analysis step is to visualize H3-cell-level change rates between 2024 and 2025, while treating cells with zero 2024 users separately.
