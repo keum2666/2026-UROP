@@ -116,7 +116,7 @@ STCIS 정류장명·순서 매핑
 | `route_stops/gtx_a_route_stops_20241017.csv` | 2024년 노선 선 시각화용 정류장 순서 |
 | `route_stops/gtx_a_route_stops_20251016.csv` | 2025년 노선 선 시각화용 정류장 순서 |
 
-원본 재현과 정류장 보정 과정을 확인하려면 `gtx_a_transport_card_20241017_raw.csv`, `gtx_a_transport_card_20251016_raw.csv`, 추가 노선 CSV, ARS-ID 보정 참고 CSV도 함께 보관합니다.
+원본 재현이 필요하면 `gtx_a_transport_card_20241017_raw.csv`와 `gtx_a_transport_card_20251016_raw.csv`를 추가로 보관합니다.
 
 ## API 키
 
