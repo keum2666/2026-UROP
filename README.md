@@ -94,6 +94,30 @@ STCIS 정류장명·순서 매핑
 | `gtx_a_seoul_bus_outputs/transport_card/` | 기준일별 교통카드·정류장·좌표 결과 |
 | `api_cache_gtx_a_routes/` | 공공데이터 API 응답 캐시 |
 
+## 분석 노트북
+
+`Analysis/01_eda_2024_2025.ipynb`에서 2024·2025년 데이터를 통합적으로 분석합니다.
+
+- 데이터 구조와 결측치 확인
+- 노선 구성 및 노선별 이용량 비교
+- 승차·하차 정류장별 수요 비교
+- 노선별 시간대 이용인원과 노선 내 비중(%) 분석
+- 한글 폰트가 적용된 막대그래프와 시간대별 히트맵
+
+## 보관할 교통카드 CSV
+
+분석에 직접 사용하는 최종 파일은 다음과 같습니다.
+
+| 파일 | 용도 |
+|---|---|
+| `gtx_a_transport_card_20241017_raw_with_coords_api_filled.csv` | 2024년 24개 노선 최종 분석 파일 |
+| `gtx_a_transport_card_20251016_raw_with_coords.csv` | 2025년 24개 노선 최종 분석 파일(7111번 분리) |
+| `gtx_a_transport_card_20251016_route_7111_with_coords.csv` | 2025년 별도 보관한 7111번 파일 |
+| `route_stops/gtx_a_route_stops_20241017.csv` | 2024년 노선 선 시각화용 정류장 순서 |
+| `route_stops/gtx_a_route_stops_20251016.csv` | 2025년 노선 선 시각화용 정류장 순서 |
+
+원본 재현과 정류장 보정 과정을 확인하려면 `gtx_a_transport_card_20241017_raw.csv`, `gtx_a_transport_card_20251016_raw.csv`, 추가 노선 CSV, ARS-ID 보정 참고 CSV도 함께 보관합니다.
+
 ## API 키
 
 API 키는 코드에 직접 기록하지 않고 `.env` 또는 노트북 입력란을 사용합니다. `.env`는 Git에 업로드하지 않습니다.
@@ -108,6 +132,7 @@ API 키는 코드에 직접 기록하지 않고 `.env` 또는 노트북 입력�
 - [x] 2024년 과거 노선 ID 4개 추가 조회
 - [x] 승차·하차 정류장명 매핑
 - [x] 모든 누락 좌표 보정 및 검증
+- [x] 2024·2025년 기초 EDA 및 노선별 시간대 이용 비중 분석
 - [ ] 노선별 수요 집계 및 GTX-A 개통 전후 변화 분석
 
 교통카드 이용내역은 실제 개인을 식별하지 않는 합성데이터입니다.
