@@ -53,15 +53,13 @@ GTX-A 역 거리구간별 결과:
 
 GTX-A 역 인접 셀에서 광역버스 승차인원 감소폭이 크게 나타났으며, 역에서 멀어질수록 감소가 완화되는 경향이 확인됐다. 단, 10km 이상 구간은 5개 셀로 표본 수가 적다.
 
-H3 해상도별 Spearman 상관계수는 H3 7이 0.202, H3 8이 0.391, H3 9가 0.376이다.
-
-H3 8 단순회귀에서 거리 계수는 약 +12.01명/km(p=0.0278), R²는 0.061이었다. 이 결과는 인과효과가 아니라 GTX-A 접근성과 광역버스 수요 변화 사이의 공간적 연관성으로 해석한다.
+분석 결과는 인과효과가 아니라 GTX-A 접근성과 광역버스 수요 변화 사이의 공간적 연관성으로 해석한다.
 
 ## 분석 노트북
 
 - `Desktop/Gachon/3-2/UROP/Analysis/01_eda_2024_2025.ipynb`: 2024·2025 교통카드 EDA 및 시간대별 수요 분석
 - `Desktop/Gachon/3-2/UROP/Analysis/02_h3_resolution_selection.ipynb`: H3 7·8·9 해상도와 공급구조 비교, 승차인원 변화 지도
-- `Desktop/Gachon/3-2/UROP/Analysis/03_gtx_station_distance_correlation.ipynb`: GTX-A 역 거리와 승차인원 변화량의 상관·회귀·거리구간 분석
+- `Desktop/Gachon/3-2/UROP/Analysis/03_gtx_station_distance_correlation.ipynb`: H3 8 기준 GTX-A 역 거리와 승차인원 변화량의 상관·거리구간 분석
 
 주요 결과 CSV는 `Desktop/Gachon/3-2/UROP/Analysis/output/`에 저장되어 있다. 03번 노트북은 분석 결과를 화면에 출력하며 별도 CSV를 저장하지 않는다.
 
@@ -73,7 +71,6 @@ H3 8 단순회귀에서 거리 계수는 약 +12.01명/km(p=0.0278), R²는 0.06
 - [x] 노선·정류장 공급구조 비교
 - [x] 공급구조 유지 셀 추출
 - [x] 승차인원 변화량 지도 시각화
-- [x] GTX-A 역 거리 상관분석
+- [x] GTX-A 역 거리 상관분석 및 p-value 확인
 - [x] GTX-A 역 거리구간별 변화량 비교
-- [x] H3 8 단순회귀분석
-- [ ] 통제변수를 포함한 다중회귀 및 민감도 분석
+- [ ] 회귀분석 및 통제변수·민감도 분석
