@@ -1,0 +1,20 @@
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.jupyter_runtime/
+
+# Secrets
+.env
+*.key
+
+# Large or restricted raw data
+**/data/raw/
+**/raw/
+**/api_cache*/
+
+# Generated archives and temporary files
+*.zip
+*.tmp
+~$*
