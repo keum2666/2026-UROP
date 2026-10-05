@@ -22,7 +22,9 @@ RAW_PATHS = {
 }
 ADMIN_PATH = DATA_DIR / "raw" / "boundaries" / "HangJeongDong_ver20260701.geojson"
 GRID_PATH = DATA_DIR / "raw" / "grid_250m" / "빈격자(250m).shp"
-SGIS_DIR = DATA_DIR / "raw" / "sgis_2024"  # 고양인구 / 파주인구 / 건축물수
+SGIS_DIR_2024 = DATA_DIR / "raw" / "sgis_2024"  # 고양인구 / 파주인구 / 건축물수
+SGIS_DIR_2025 = DATA_DIR / "raw" / "sgis_2025"  # 고양인구 / 파주인구
+SGIS_DIR = SGIS_DIR_2024  # 기존 03_독립변수_인구_건축물 노트북과의 호환용
 
 # data/processed — 모든 중간·최종 분석용 집계자료
 STABLE_PATH = PROCESSED_DIR / "01_공급구조유지_250m격자.csv"
@@ -42,6 +44,7 @@ POPULATION_PATH = OUT1 / "07_인구_2024_250m격자.csv"
 BUILDING_PATH = OUT1 / "08_건축물수_2024_250m격자.csv"
 MODEL_DATA_PATH = OUT1 / "09_회귀분석_격자통합데이터.csv"
 CELL_ROUTE_ALL_DAY_PATH = PROCESSED_DIR / "10_셀노선별_종일승차인원.csv"
+POPULATION_CHANGE_PATH = OUT1 / "11_20~50대인구변화_2024_2025_250m격자.csv"
 
 # analysis에서 생성하는 지도·표 등은 outputs에 저장
 OUT2 = PROJECT_DIR / "outputs"
