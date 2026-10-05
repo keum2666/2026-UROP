@@ -1,8 +1,8 @@
-"""데이터를 뺀 전달용 zip 만들기.
+"""원자료를 제외한 전달용 zip 만들기.
 
     python make_transfer_zip.py
 
-- data/raw/*, data/received_features/* 의 실제 파일은 빼고 폴더 구조와 data/데이터_넣는곳.md는 넣는다.
+- data/raw/*의 실제 파일은 제외하고, 재현에 필요한 data/processed/*는 포함한다.
 - 한글 파일명을 UTF-8 + NFC로 저장해 윈도우에서도 깨지지 않는다 (맥 기본 zip은 깨짐).
 - 결과: 이 폴더의 상위 폴더에 <폴더이름>_전달용.zip
 """
@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT.parent / f"{ROOT.name}_전달용.zip"
 SKIP_DIRS = {"__pycache__", ".ipynb_checkpoints", ".git"}
-DATA_DIRS = {"raw", "received_features"}
+DATA_DIRS = {"raw"}
 
 nfc = lambda text: unicodedata.normalize("NFC", text)
 

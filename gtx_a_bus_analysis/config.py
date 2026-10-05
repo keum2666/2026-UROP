@@ -1,4 +1,4 @@
-"""경로와 공통 함수. 1_받은코드_정리, 2_추가분석의 모든 노트북이 이 파일을 불러온다.
+"""경로와 공통 함수. processing, analysis의 모든 노트북이 이 파일을 불러온다.
 
 데이터는 모두 이 폴더 안의 data/ 에 있으므로 폴더를 통째로 옮겨도 그대로 동작한다.
 """
@@ -24,16 +24,16 @@ ADMIN_PATH = DATA_DIR / "raw" / "boundaries" / "HangJeongDong_ver20260701.geojso
 GRID_PATH = DATA_DIR / "raw" / "grid_250m" / "빈격자(250m).shp"
 SGIS_DIR = DATA_DIR / "raw" / "sgis_2024"  # 고양인구 / 파주인구 / 건축물수
 
-# data/received_features — 친구가 만든 피처 (생성 코드는 전달받지 못함)
-STABLE_PATH = DATA_DIR / "received_features" / "stable_250m_grid_centers_143_with_supply_details.csv"
-WALK_PATH = DATA_DIR / "received_features" / "feature_02_ors_get_walking_accessibility_250m_stable.csv"
-IC_PATH = DATA_DIR / "received_features" / "feature_04_ic_accessibility_250m_stable.csv"
+# data/processed — 모든 중간·최종 분석용 집계자료
+STABLE_PATH = PROCESSED_DIR / "stable_250m_grid_centers_143_with_supply_details.csv"
+WALK_PATH = PROCESSED_DIR / "feature_02_ors_get_walking_accessibility_250m_stable.csv"
+IC_PATH = PROCESSED_DIR / "feature_04_ic_accessibility_250m_stable.csv"
 
 # _원본전달본 — 받은 원본 결과 (정리본과 대조용)
 ORIGINAL_OUTPUT = PROJECT_DIR / "_원본전달본" / "Analisis3" / "output"
 
-# 1_받은코드_정리 결과
-OUT1 = PROJECT_DIR / "1_받은코드_정리" / "output"
+# processing 결과는 모두 data/processed에 저장
+OUT1 = PROCESSED_DIR
 DEPENDENT_PATH = OUT1 / "y_boarding_change.csv"
 # 최종 종일 모형용 목적지 경쟁 비율. 기존 오전 파일과 분리한다.
 COMPETING_PATH = OUT1 / "x_competing_destination_share_all_day.csv"
@@ -42,8 +42,8 @@ BUILDING_PATH = OUT1 / "x_building_count_2024.csv"
 MODEL_DATA_PATH = OUT1 / "model_dataset.csv"
 CELL_ROUTE_ALL_DAY_PATH = PROCESSED_DIR / "cell_route_all_day.csv"
 
-# 2_추가분석 결과
-OUT2 = PROJECT_DIR / "2_추가분석" / "output"
+# analysis에서 생성하는 지도·표 등은 outputs에 저장
+OUT2 = PROJECT_DIR / "outputs"
 ROUTE_LEVEL_PATH = OUT2 / "route_level_change.csv"
 MAP_PATH = OUT2 / "map_change_rate.html"
 
