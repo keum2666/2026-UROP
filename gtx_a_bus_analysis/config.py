@@ -37,9 +37,8 @@ ORIGINAL_OUTPUT = PROJECT_DIR / "_원본전달본" / "Analisis3" / "output"
 # processing 결과는 모두 data/processed에 저장
 OUT1 = PROCESSED_DIR
 DEPENDENT_PATH = OUT1 / "04_광역버스_승차인원변화_250m격자.csv"
-# 오전 탐색용과 최종 종일 모형용 목적지 경쟁 비율을 분리한다.
-COMPETING_MORNING_PATH = OUT1 / "05_GTX_경쟁목적지비율_오전.csv"
-COMPETING_PATH = OUT1 / "06_GTX_경쟁목적지비율_종일.csv"
+# 최종 종일 모형용 셀×노선 GTX 경쟁 목적지 비율
+COMPETING_CELL_ROUTE_PATH = OUT1 / "05_GTX_경쟁목적지비율_종일_셀노선.csv"
 POPULATION_PATH = OUT1 / "07_인구_2024_250m격자.csv"
 BUILDING_PATH = OUT1 / "08_건축물수_2024_250m격자.csv"
 MODEL_DATA_PATH = OUT1 / "09_회귀분석_격자통합데이터.csv"
@@ -101,24 +100,14 @@ def read_csv(path):
 
 
 def load_model_data():
-    """회귀용 데이터 + 종일 목적지 경쟁 비율 + 보행시간 구간 더미.
+    """격자 단위 회귀용 데이터와 보행시간 구간 더미를 읽는다.
 
-    09_회귀분석_격자통합데이터.csv에 들어 있던 오전 목적지 비율을 그대로 사용하지 않고,
-    COMPETING_PATH의 종일 기준 목적지 비율로 덮어쓴다.
+    최종모형의 GTX 경쟁 목적지 비율은 셀×노선 변수이므로
+    load_cell_route_all_day()에서 별도로 결합한다.
     """
     data = read_csv(MODEL_DATA_PATH)
-    competing = read_csv(COMPETING_PATH)
-    cell_col = competing.columns[0]
-    share_col = next(column for column in competing.columns if "비율" in str(column))
-    competing = competing[[cell_col, share_col]].rename(
-        columns={cell_col: "셀 ID", share_col: "competing_share_all_day"}
-    )
-    competing["셀 ID"] = pd.to_numeric(competing["셀 ID"], errors="coerce").astype("Int64")
     data["셀 ID"] = pd.to_numeric(data["셀 ID"], errors="coerce").astype("Int64")
     data = data.drop(columns=["competing_share", "competing_share_missing"], errors="ignore")
-    data = data.merge(competing, on="셀 ID", how="left")
-    data["competing_share"] = pd.to_numeric(data.pop("competing_share_all_day"), errors="coerce")
-    data["competing_share_missing"] = data["competing_share"].isna().astype(int)
     data["log_board_2024"] = np.log1p(data["board_2024"])
     data["walk_20"] = (data["walk_min"] <= 20).astype(float)
     data["walk_20_60"] = ((data["walk_min"] > 20) & (data["walk_min"] <= 60)).astype(float)
@@ -141,7 +130,18 @@ def load_cell_route_all_day():
     frame["노선"] = frame["노선"].astype(str)
     frame["y2024"] = pd.to_numeric(frame["y2024"], errors="coerce").fillna(0)
     frame["y2025"] = pd.to_numeric(frame["y2025"], errors="coerce").fillna(0)
-    return frame.dropna(subset=["셀 ID"]).copy()
+    frame = frame.dropna(subset=["셀 ID"]).copy()
+
+    competing = read_csv(COMPETING_CELL_ROUTE_PATH)
+    competing["셀 ID"] = pd.to_numeric(competing["셀 ID"], errors="coerce").astype("Int64")
+    competing["노선"] = competing["노선"].astype(str).str.removesuffix(".0")
+    share_col = "GTX 경쟁 목적지 승차인원 비율(%)"
+    competing = competing[["셀 ID", "노선", share_col]].rename(columns={share_col: "competing_share"})
+    competing["competing_share"] = pd.to_numeric(competing["competing_share"], errors="coerce")
+    frame = frame.merge(competing, on=["셀 ID", "노선"], how="left", validate="one_to_one")
+    frame["competing_share_missing"] = frame["competing_share"].isna().astype(int)
+    frame["competing_share"] = frame["competing_share"].fillna(0)
+    return frame
 
 
 def coef_table(result, rate=False):
