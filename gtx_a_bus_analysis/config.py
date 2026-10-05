@@ -25,22 +25,23 @@ GRID_PATH = DATA_DIR / "raw" / "grid_250m" / "빈격자(250m).shp"
 SGIS_DIR = DATA_DIR / "raw" / "sgis_2024"  # 고양인구 / 파주인구 / 건축물수
 
 # data/processed — 모든 중간·최종 분석용 집계자료
-STABLE_PATH = PROCESSED_DIR / "stable_250m_grid_centers_143_with_supply_details.csv"
-WALK_PATH = PROCESSED_DIR / "feature_02_ors_get_walking_accessibility_250m_stable.csv"
-IC_PATH = PROCESSED_DIR / "feature_04_ic_accessibility_250m_stable.csv"
+STABLE_PATH = PROCESSED_DIR / "01_공급구조유지_250m격자.csv"
+WALK_PATH = PROCESSED_DIR / "02_GTX역_보행접근성_250m격자.csv"
+IC_PATH = PROCESSED_DIR / "03_IC_도로접근성_250m격자.csv"
 
 # _원본전달본 — 받은 원본 결과 (정리본과 대조용)
 ORIGINAL_OUTPUT = PROJECT_DIR / "_원본전달본" / "Analisis3" / "output"
 
 # processing 결과는 모두 data/processed에 저장
 OUT1 = PROCESSED_DIR
-DEPENDENT_PATH = OUT1 / "y_boarding_change.csv"
-# 최종 종일 모형용 목적지 경쟁 비율. 기존 오전 파일과 분리한다.
-COMPETING_PATH = OUT1 / "x_competing_destination_share_all_day.csv"
-POPULATION_PATH = OUT1 / "x_population_2024.csv"
-BUILDING_PATH = OUT1 / "x_building_count_2024.csv"
-MODEL_DATA_PATH = OUT1 / "model_dataset.csv"
-CELL_ROUTE_ALL_DAY_PATH = PROCESSED_DIR / "cell_route_all_day.csv"
+DEPENDENT_PATH = OUT1 / "04_광역버스_승차인원변화_250m격자.csv"
+# 오전 탐색용과 최종 종일 모형용 목적지 경쟁 비율을 분리한다.
+COMPETING_MORNING_PATH = OUT1 / "05_GTX_경쟁목적지비율_오전.csv"
+COMPETING_PATH = OUT1 / "06_GTX_경쟁목적지비율_종일.csv"
+POPULATION_PATH = OUT1 / "07_인구_2024_250m격자.csv"
+BUILDING_PATH = OUT1 / "08_건축물수_2024_250m격자.csv"
+MODEL_DATA_PATH = OUT1 / "09_회귀분석_격자통합데이터.csv"
+CELL_ROUTE_ALL_DAY_PATH = PROCESSED_DIR / "10_셀노선별_종일승차인원.csv"
 
 # analysis에서 생성하는 지도·표 등은 outputs에 저장
 OUT2 = PROJECT_DIR / "outputs"
@@ -62,7 +63,7 @@ COMPETING_RADIUS_M = 1000
 # GTX-A역 좌표: 경훈 보행시간 파일(feature_02)에 쓰인 값과 동일하게 맞춤
 GTX_STATIONS = {"운정중앙": (37.716670, 126.728330), "킨텍스": (37.665000, 126.748060), "대곡": (37.631626, 126.811024)}
 
-# 본모형 독립변수 (model_dataset.csv 컬럼명)
+# 본모형 독립변수 (09_회귀분석_격자통합데이터.csv 컬럼명)
 X_MAIN = ["walk_min", "ic_access", "competing_share", "pop_20_50", "buildings"]
 VARIABLE_LABELS = {
     "walk_min": "GTX역 보행시간(분)", "ic_access": "IC까지 도로거리(km)", "competing_share": "GTX 경쟁 목적지 비율(%)",
@@ -99,7 +100,7 @@ def read_csv(path):
 def load_model_data():
     """회귀용 데이터 + 종일 목적지 경쟁 비율 + 보행시간 구간 더미.
 
-    model_dataset.csv에 들어 있던 오전 목적지 비율을 그대로 사용하지 않고,
+    09_회귀분석_격자통합데이터.csv에 들어 있던 오전 목적지 비율을 그대로 사용하지 않고,
     COMPETING_PATH의 종일 기준 목적지 비율로 덮어쓴다.
     """
     data = read_csv(MODEL_DATA_PATH)
