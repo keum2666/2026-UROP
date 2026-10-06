@@ -44,6 +44,7 @@ BUILDING_PATH = OUT1 / "08_건축물수_2024_250m격자.csv"
 MODEL_DATA_PATH = OUT1 / "09_회귀분석_격자통합데이터.csv"
 CELL_ROUTE_ALL_DAY_PATH = PROCESSED_DIR / "10_셀노선별_종일승차인원.csv"
 POPULATION_CHANGE_PATH = OUT1 / "11_20~50대인구변화_2024_2025_250m격자.csv"
+LAND_PRICE_2024_PATH = OUT1 / "12_공시지가_2024_250m격자.csv"
 
 # analysis에서 생성하는 지도·표 등은 outputs에 저장
 OUT2 = PROJECT_DIR / "outputs"
