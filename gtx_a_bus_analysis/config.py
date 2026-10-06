@@ -39,6 +39,7 @@ OUT1 = PROCESSED_DIR
 DEPENDENT_PATH = OUT1 / "04_광역버스_승차인원변화_250m격자.csv"
 # 최종 종일 모형용 셀×노선 GTX 경쟁 목적지 비율
 COMPETING_CELL_ROUTE_PATH = OUT1 / "05_GTX_경쟁목적지비율_종일_셀노선.csv"
+COMPETING_CELL_PATH = OUT1 / "06_GTX_경쟁목적지비율_종일_셀.csv"
 POPULATION_PATH = OUT1 / "07_인구_2024_250m격자.csv"
 BUILDING_PATH = OUT1 / "08_건축물수_2024_250m격자.csv"
 MODEL_DATA_PATH = OUT1 / "09_회귀분석_격자통합데이터.csv"
@@ -46,6 +47,7 @@ CELL_ROUTE_ALL_DAY_PATH = PROCESSED_DIR / "10_셀노선별_종일승차인원.cs
 POPULATION_CHANGE_PATH = OUT1 / "11_20~50대인구변화_2024_2025_250m격자.csv"
 LAND_PRICE_2024_PATH = OUT1 / "12_공시지가_2024_250m격자.csv"
 TRAVEL_TIME_2024_PATH = OUT1 / "13_광역버스통행시간_2024_종일_셀노선.csv"
+TIME_BAND_CELL_PATH = OUT1 / "14_시간대별_승차인원_셀.csv"
 
 # analysis에서 생성하는 지도·표 등은 outputs에 저장
 OUT2 = PROJECT_DIR / "outputs"
